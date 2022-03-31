@@ -2,7 +2,7 @@ import streamlit as st
 import yaml
 
 def data_page():
-    with open(r'C:\Users\09371169\PycharmProjects\StreamlitProject\venv\share\configuration.yaml') as file:
+    with open(r'C:\Users\skurt\PycharmProjects\StreamlitProject\venv\share\configuration.yaml') as file:
         dictionary = yaml.safe_load(file)
 
     st.header('Data')
@@ -32,7 +32,7 @@ def data_page():
     submit = st.button('Submit')
 
     def write_to_file():
-        with open(r'C:\Users\09371169\PycharmProjects\StreamlitProject\venv\share\configuration.yaml','w') as file:
+        with open(r'C:\Users\skurt\PycharmProjects\StreamlitProject\venv\share\configuration.yaml','w') as file:
             documents = yaml.dump(dictionary, file, sort_keys=False, default_flow_style=False,allow_unicode = True, encoding = None)
 
     if submit:
