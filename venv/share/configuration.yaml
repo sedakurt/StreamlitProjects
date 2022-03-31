@@ -1,0 +1,12 @@
+data:
+  data_platform: sql
+  account_name: skurt
+  production: false
+  aggregations:
+    sales_quantity: sum
+profiling:
+  profiling_group_cols: product_hierarchy_1_desc, product_hierarchy_2_desc
+  sales_profiling_gap: 0.25, 3
+  profiling_month: 13
+  clustering:
+    date_start: 2022-01-02
