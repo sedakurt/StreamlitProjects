@@ -8,7 +8,7 @@ from PIL import Image
 st.set_page_config(page_title="Configuration.yaml")
 
 # Sidebar Navigation
-image = Image.open(r'C:\Users\09371169\PycharmProjects\StreamlitProject\venv\share\Python_logo_and_wordmark.png')
+image = Image.open(r'C:\Users\skurt\PycharmProjects\StreamlitProject\venv\share\Python_logo_and_wordmark.png')
 st.sidebar.image(image, width=285)
 options = st.sidebar.radio('',['Data','Profiling'])
 if options == 'Data':
